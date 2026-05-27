@@ -31,7 +31,7 @@ Website ini dibuat dengan fokus pada kecepatan performa, desain modern yang resp
 
 1. **Clone atau Download** repository ini.
 2. Buka file `index.html`.
-3. Cari teks nomor WhatsApp default `6281234567890` di dalam kode, lalu ubah dengan nomor WhatsApp Anda sendiri (gunakan format kode negara `62`).
+3. Cari teks nomor WhatsApp default `628551929659` di dalam kode, lalu ubah dengan nomor WhatsApp Anda sendiri (gunakan format kode negara `62`).
 4. Sesuaikan harga paket internet atau promo di bagian `#paket` jika ada perubahan tarif resmi dari Telkom.
 5. Upload kembali ke GitHub Pages untuk langsung mengonlinekannya!
 
