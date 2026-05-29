@@ -1,427 +1,250 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pasang WiFi IndiHome Jakarta | Paket Terbaru 2026</title>
-  <meta name="description" content="Website jasa pemasangan WiFi IndiHome dengan paket terbaru 2026, harga promo, dan tampilan modern." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#07111f;
-      --bg2:#0b1b33;
-      --card:#0f2342cc;
-      --line:#1d3a63;
-      --text:#eaf2ff;
-      --muted:#a8bdd8;
-      --brand:#4dd7ff;
-      --brand2:#7c5cff;
-      --accent:#31e7a8;
-      --warning:#ffd166;
-      --shadow:0 20px 60px rgba(0,0,0,.35);
-      --radius:22px;
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-      background:
-        radial-gradient(circle at top left, rgba(77,215,255,.14), transparent 22%),
-        radial-gradient(circle at top right, rgba(124,92,255,.16), transparent 25%),
-        linear-gradient(180deg, var(--bg), #07111a 48%, #050b14);
-      color:var(--text);
-    }
-    a{text-decoration:none;color:inherit}
-    .container{width:min(1180px,92%);margin:auto}
-    .navbar{
-      position:sticky;top:0;z-index:50;
-      backdrop-filter:blur(16px);
-      background:rgba(5,11,20,.68);
-      border-bottom:1px solid rgba(255,255,255,.08);
-    }
-    .nav-wrap{
-      display:flex;align-items:center;justify-content:space-between;
-      padding:16px 0;
-    }
-    .logo{
-      display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.2px
-    }
-    .logo-badge{
-      width:42px;height:42px;border-radius:14px;
-      background:linear-gradient(135deg,var(--brand),var(--brand2));
-      display:grid;place-items:center;box-shadow:var(--shadow);
-      color:#fff;font-weight:900;
-    }
-    .nav-links{display:flex;gap:22px;flex-wrap:wrap}
-    .nav-links a{color:var(--muted);font-weight:600}
-    .nav-links a:hover{color:#fff}
-    .btn{
-      display:inline-flex;align-items:center;justify-content:center;gap:10px;
-      padding:14px 20px;border-radius:999px;font-weight:700;
-      border:1px solid transparent;transition:.25s ease;cursor:pointer;
-    }
-    .btn-primary{
-      background:linear-gradient(135deg,var(--brand),var(--brand2));
-      color:#fff;box-shadow:0 12px 30px rgba(77,215,255,.18);
-    }
-    .btn-primary:hover{transform:translateY(-2px);filter:brightness(1.05)}
-    .btn-ghost{
-      border-color:rgba(255,255,255,.14);
-      background:rgba(255,255,255,.04);
-      color:#fff;
-    }
-    .hero{
-      padding:72px 0 42px;
-      display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center;
-    }
-    .eyebrow{
-      display:inline-flex;gap:10px;align-items:center;
-      padding:9px 14px;border:1px solid rgba(77,215,255,.25);
-      background:rgba(77,215,255,.08);border-radius:999px;color:#bff3ff;
-      font-size:13px;font-weight:700;
-    }
-    h1{
-      font-size:clamp(2.3rem,5vw,4.8rem);
-      line-height:1.02;margin:18px 0 16px;letter-spacing:-.04em;
-    }
-    .lead{color:var(--muted);font-size:1.05rem;line-height:1.75;max-width:60ch}
-    .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
-    .stats{
-      display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px
-    }
-    .stat{
-      padding:18px;border:1px solid rgba(255,255,255,.08);
-      border-radius:18px;background:rgba(255,255,255,.04)
-    }
-    .stat strong{display:block;font-size:1.2rem;margin-bottom:6px}
-    .panel{
-      border:1px solid rgba(255,255,255,.08);
-      background:linear-gradient(180deg, rgba(15,35,66,.92), rgba(7,17,31,.92));
-      border-radius:28px;padding:24px;box-shadow:var(--shadow);
-      position:relative;overflow:hidden;
-    }
-    .panel::before{
-      content:"";position:absolute;inset:-120px auto auto -120px;width:240px;height:240px;
-      background:radial-gradient(circle, rgba(77,215,255,.22), transparent 70%);
-      pointer-events:none;
-    }
-    .mini-title{color:#b9d4ff;font-weight:700;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase}
-    .price-card{
-      margin-top:14px;padding:20px;border-radius:20px;
-      background:linear-gradient(135deg, rgba(77,215,255,.12), rgba(124,92,255,.12));
-      border:1px solid rgba(255,255,255,.10);
-    }
-    .price-card h3{margin:0 0 8px;font-size:1.35rem}
-    .price{font-size:2.8rem;font-weight:800;line-height:1;margin:10px 0}
-    .price small{font-size:1rem;color:var(--muted);font-weight:600}
-    .tag{
-      display:inline-flex;padding:8px 12px;border-radius:999px;
-      background:rgba(49,231,168,.12);color:#a9ffe0;font-size:.85rem;font-weight:700
-    }
-    section{padding:28px 0 18px}
-    .section-head{display:flex;justify-content:space-between;gap:16px;align-items:end;margin-bottom:18px}
-    .section-head h2{font-size:clamp(1.5rem,3vw,2.2rem);margin:0}
-    .section-head p{margin:0;color:var(--muted);max-width:62ch;line-height:1.7}
-    .grid{
-      display:grid;gap:18px
-    }
-    .plans{grid-template-columns:repeat(3,1fr)}
-    .card{
-      padding:22px;border-radius:24px;border:1px solid rgba(255,255,255,.08);
-      background:rgba(255,255,255,.04);box-shadow:var(--shadow);position:relative;overflow:hidden
-    }
-    .card.featured{border-color:rgba(77,215,255,.35);transform:translateY(-4px)}
-    .plan-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
-    .plan-name{font-weight:800;font-size:1.1rem}
-    .plan-speed{color:#bfe9ff;font-size:.9rem;margin-top:6px}
-    .plan-price{font-size:2rem;font-weight:800;margin:18px 0 8px}
-    .plan-price span{font-size:1rem;color:var(--muted);font-weight:600}
-    .benefits{display:grid;gap:10px;margin-top:14px;color:#d6e7fb}
-    .benefits div{display:flex;gap:10px;align-items:flex-start}
-    .dot{
-      width:10px;height:10px;border-radius:50%;margin-top:7px;background:var(--accent);flex:0 0 auto
-    }
-    .pill-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-    .pill{
-      font-size:.82rem;padding:7px 10px;border-radius:999px;
-      background:rgba(255,255,255,.06);color:#dbe8f9;border:1px solid rgba(255,255,255,.07)
-    }
-    .steps{grid-template-columns:repeat(4,1fr)}
-    .step-num{
-      width:38px;height:38px;border-radius:12px;display:grid;place-items:center;font-weight:800;
-      background:linear-gradient(135deg,var(--brand),var(--brand2));margin-bottom:14px
-    }
-    .cta{
-      margin:34px 0 18px;
-      padding:28px;border-radius:28px;
-      background:linear-gradient(135deg, rgba(77,215,255,.14), rgba(124,92,255,.16));
-      border:1px solid rgba(255,255,255,.08);
-      display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;
-    }
-    .cta h3{margin:0 0 8px;font-size:1.6rem}
-    .cta p{margin:0;color:var(--muted);line-height:1.7}
-    .footer{
-      padding:26px 0 40px;color:var(--muted);font-size:.92rem;line-height:1.7
-    }
-    .note{
-      margin-top:18px;padding:14px 16px;border-left:4px solid var(--warning);
-      background:rgba(255,209,102,.08);border-radius:14px;color:#ffe9b3
-    }
-    @media (max-width: 980px){
-      .hero,.plans,.steps{grid-template-columns:1fr}
-      .stats{grid-template-columns:1fr}
-      .nav-links{display:none}
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasang WiFi IndiHome Terbaru 2026 | Proses Cepat & Mudah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
 </head>
-<body>
-  <header class="navbar">
-    <div class="container nav-wrap">
-      <div class="logo">
-        <div class="logo-badge">W</div>
-        <div>
-          <div>WIFI INDIHOME</div>
-          <small style="color:var(--muted);font-weight:600">Pasang Cepat • Aktif Resmi</small>
-        </div>
-      </div>
-      <nav class="nav-links">
-        <a href="#paket">Paket</a>
-        <a href="#keunggulan">Keunggulan</a>
-        <a href="#cara">Cara Pasang</a>
-        <a href="#kontak">Kontak</a>
-      </nav>
-      <a class="btn btn-primary" href="#kontak">Daftar Sekarang</a>
-    </div>
-  </header>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-  <main class="container">
-    <section class="hero">
-      <div>
-        <span class="eyebrow">Promo Pasang WiFi IndiHome 2026 • Area Jakarta & Sekitarnya</span>
-        <h1>Website Jasa Pemasangan WiFi IndiHome yang Modern dan Menarik</h1>
-        <p class="lead">
-          Solusi internet rumah, kos, dan kantor kecil dengan pilihan paket terbaru 2026,
-          proses pendaftaran mudah, dan tampilan landing page yang dibuat untuk meningkatkan konversi.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#paket">Lihat Paket</a>
-          <a class="btn btn-ghost" href="#kontak">Konsultasi Gratis</a>
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl font-black text-red-600 tracking-wider">IndiHome</span>
+                <span class="text-xs bg-red-100 text-red-600 font-bold px-2 py-0.5 rounded-full">by Telkomsel</span>
+            </div>
+            <div class="hidden md:flex space-x-6 font-medium text-gray-600">
+                <a href="#home" class="hover:text-red-600 transition">Home</a>
+                <a href="#keunggulan" class="hover:text-red-600 transition">Keunggulan</a>
+                <a href="#paket" class="hover:text-red-600 transition">Paket Harga 2026</a>
+                <a href="#alur" class="hover:text-red-600 transition">Cara Daftar</a>
+            </div>
+            <a href="https://wa.me/628551929659?text=Halo%20Sales%20IndiHome,%20saya%20mau%20tanya%20pasang%20WiFi" 
+               target="_blank" 
+               class="bg-green-500 hover:bg-green-600 text-white font-bold px-5 py-2 rounded-full shadow-md flex items-center space-x-2 transition text-sm md:text-base">
+                <i class="fab fa-whatsapp text-lg"></i>
+                <span>Daftar Sekarang</span>
+            </a>
         </div>
+    </nav>
 
-        <div class="stats">
-          <div class="stat">
-            <strong>Paket Resmi</strong>
-            <span>Pilihan 1P, 2P, 3P, dan Movie Bundle terbaru 2026.</span>
-          </div>
-          <div class="stat">
-            <strong>Biaya Pasang</strong>
-            <span>Promo pemasangan mulai Rp99.000 pada periode tertentu.</span>
-          </div>
-          <div class="stat">
-            <strong>Aktif Cepat</strong>
-            <span>Alur daftar dibuat sederhana agar pelanggan mudah order.</span>
-          </div>
+    <section id="home" class="pt-28 pb-16 bg-gradient-to-br from-red-600 via-red-500 to-amber-500 text-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 space-y-6 text-center md:text-left mb-10 md:mb-0">
+                <span class="bg-white/20 text-white font-semibold text-xs px-3 py-1 rounded-full uppercase tracking-wider">Promo Spesial 2026</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+                    Pasang WiFi IndiHome Rumah & Kantor Jadi Lebih Cepat!
+                </h1>
+                <p class="text-lg text-white/90 max-w-xl">
+                    Nikmati jaringan 100% Fiber Optic terluas di Indonesia dengan teknologi terbaru. Bebas internetan tanpa kuota semalaman dengan harga hemat.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                    <a href="#paket" class="bg-white text-red-600 font-bold px-8 py-3 rounded-xl shadow-lg hover:bg-gray-100 transition text-center">
+                        Lihat Pilihan Paket
+                    </a>
+                    <a href="https://wa.me/628551929659?text=Cek%20Lokasi%20Pemasangan%20IndiHome" target="_blank" class="border-2 border-white text-white font-bold px-8 py-3 rounded-xl hover:bg-white/10 transition text-center flex items-center justify-center space-x-2">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Cek Area Lokasi</span>
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative bg-white/10 p-8 rounded-full animate-pulse">
+                    <i class="fas fa-wifi text-[150px] md:text-[220px] text-white/80"></i>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <aside class="panel">
-        <div class="mini-title">Paket Unggulan</div>
-        <div class="price-card">
-          <h3>IndiHome 1P Internet</h3>
-          <div class="tag">Paling diminati untuk rumah</div>
-          <div class="price">Rp299.000 <small>/bulan</small></div>
-          <p style="color:var(--muted);line-height:1.7;margin:0">
-            Hingga 50 Mbps, cocok untuk kerja, belajar, streaming, dan kebutuhan keluarga.
-          </p>
-        </div>
-        <div class="benefits">
-          <div><span class="dot"></span><span>Internet stabil berbasis fiber optic.</span></div>
-          <div><span class="dot"></span><span>Opsi paket internet saja, internet + phone, internet + TV, dan bundling lengkap.</span></div>
-          <div><span class="dot"></span><span>Ideal untuk rumah tangga, UMKM, dan kantor kecil.</span></div>
-        </div>
-        <div class="note">Harga dapat berbeda حسب area pemasangan dan promo yang berlaku.</div>
-      </aside>
     </section>
 
-    <section id="paket">
-      <div class="section-head">
-        <div>
-          <h2>Daftar Paket Terbaru 2026</h2>
-          <p>Berikut paket yang bisa Anda tampilkan di website, disusun agar calon pelanggan mudah memilih sesuai kebutuhan internet dan hiburan.</p>
+    <section id="keunggulan" class="py-16 container mx-auto px-4">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-3">Kenapa Harus Memilih IndiHome?</h2>
+            <p class="text-gray-600">Layanan internet rumah terbaik pilihan masyarakat Indonesia dengan jaminan koneksi stabil.</p>
         </div>
-      </div>
-
-      <div class="grid plans">
-        <article class="card">
-          <div class="plan-top">
-            <div>
-              <div class="plan-name">JITU 1P Internet</div>
-              <div class="plan-speed">Hingga 30 Mbps</div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition text-center space-y-4">
+                <div class="w-14 h-14 bg-red-100 text-red-600 rounded-full flex items-center justify-center text-2xl mx-auto">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900">100% Fiber Optic</h3>
+                <p class="text-gray-600 text-sm">Transfer data berkecepatan tinggi yang stabil dalam segala kondisi cuaca tanpa gangguan.</p>
             </div>
-            <div class="tag">Internet Only</div>
-          </div>
-          <div class="plan-price">Rp280.000 <span>/bulan</span></div>
-          <div class="benefits">
-            <div><span class="dot"></span><span>Cocok untuk kebutuhan dasar rumah.</span></div>
-            <div><span class="dot"></span><span>Skema 1P tanpa layanan tambahan.</span></div>
-          </div>
-        </article>
-
-        <article class="card featured">
-          <div class="plan-top">
-            <div>
-              <div class="plan-name">JITU 1P Internet</div>
-              <div class="plan-speed">Hingga 50 Mbps</div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition text-center space-y-4">
+                <div class="w-14 h-14 bg-amber-100 text-amber-500 rounded-full flex items-center justify-center text-2xl mx-auto">
+                    <i class="fas fa-infinity"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900">Kuota Tanpa Batas</h3>
+                <p class="text-gray-600 text-sm">Internet Unlimited sepuasnya tanpa perlu khawatir kehabisan kuota di tengah bulan.</p>
             </div>
-            <div class="tag">Best Seller</div>
-          </div>
-          <div class="plan-price">Rp299.000 <span>/bulan</span></div>
-          <div class="benefits">
-            <div><span class="dot"></span><span>Pas untuk 3–5 perangkat aktif.</span></div>
-            <div><span class="dot"></span><span>Pilihan paling seimbang untuk keluarga.</span></div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="plan-top">
-            <div>
-              <div class="plan-name">JITU 1P Internet</div>
-              <div class="plan-speed">Hingga 100 Mbps</div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition text-center space-y-4">
+                <div class="w-14 h-14 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-2xl mx-auto">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900">Layanan Sales 24/7</h3>
+                <p class="text-gray-600 text-sm">Proses pendaftaran dibantu penuh oleh tim profesional kami hingga WiFi aktif di rumah Anda.</p>
             </div>
-            <div class="tag">Premium</div>
-          </div>
-          <div class="plan-price">Rp375.000 <span>/bulan</span></div>
-          <div class="benefits">
-            <div><span class="dot"></span><span>Ideal untuk banyak pengguna sekaligus.</span></div>
-            <div><span class="dot"></span><span>Lebih nyaman untuk streaming dan kerja.</span></div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="plan-top">
-            <div>
-              <div class="plan-name">2P Internet + Phone</div>
-              <div class="plan-speed">Hingga 30 Mbps</div>
-            </div>
-            <div class="tag">Phone Bonus</div>
-          </div>
-          <div class="plan-price">Rp300.000 <span>/bulan</span></div>
-          <div class="benefits">
-            <div><span class="dot"></span><span>Termasuk 100 menit telepon.</span></div>
-            <div><span class="dot"></span><span>Bonus Disney+ Hotstar pada paket tertentu.</span></div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="plan-top">
-            <div>
-              <div class="plan-name">Internet + TV</div>
-              <div class="plan-speed">Hingga 30 Mbps</div>
-            </div>
-            <div class="tag">Home Entertainment</div>
-          </div>
-          <div class="plan-price">Rp340.000 <span>/bulan</span></div>
-          <div class="benefits">
-            <div><span class="dot"></span><span>Hiburan keluarga dengan TV interaktif.</span></div>
-            <div><span class="dot"></span><span>Cocok untuk ruang keluarga atau usaha.</span></div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="plan-top">
-            <div>
-              <div class="plan-name">Internet + Phone + TV</div>
-              <div class="plan-speed">Hingga 50 Mbps</div>
-            </div>
-            <div class="tag">All-in-One</div>
-          </div>
-          <div class="plan-price">Rp515.000 <span>/bulan</span></div>
-          <div class="benefits">
-            <div><span class="dot"></span><span>Paket lengkap untuk kebutuhan rumah dan kantor kecil.</span></div>
-            <div><span class="dot"></span><span>Sudah termasuk telepon, TV, dan internet.</span></div>
-          </div>
-        </article>
-      </div>
+        </div>
     </section>
 
-    <section id="keunggulan">
-      <div class="section-head">
-        <div>
-          <h2>Kenapa Website Ini Menarik</h2>
-          <p>Desain dibuat dengan nuansa premium, kontras yang kuat, dan layout yang fokus pada penawaran agar mudah menarik calon pelanggan.</p>
-        </div>
-      </div>
+    <section id="paket" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-3">Daftar Harga Paket Paket IndiHome 2026</h2>
+                <p class="text-gray-600">Pilih kecepatan internet sesuai kebutuhan harian perangkat keluarga Anda.</p>
+                <span class="inline-block mt-2 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-md">*Biaya Pasang Baru (PSB) Promo Rp99.000 saja!</span>
+            </div>
 
-      <div class="grid plans">
-        <article class="card">
-          <div class="plan-name">Tampilan Modern</div>
-          <p style="color:var(--muted);line-height:1.7">Menggunakan gradasi, kartu paket, dan tata letak responsif agar terlihat profesional di HP maupun desktop.</p>
-        </article>
-        <article class="card">
-          <div class="plan-name">Struktur Jelas</div>
-          <p style="color:var(--muted);line-height:1.7">Pengunjung langsung melihat paket, keunggulan, dan tombol pendaftaran tanpa perlu scroll berlebihan.</p>
-        </article>
-        <article class="card">
-          <div class="plan-name">Fokus Konversi</div>
-          <p style="color:var(--muted);line-height:1.7">CTA WhatsApp dan form kontak bisa ditambahkan untuk mempercepat order pemasangan.</p>
-        </article>
-      </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden flex flex-col justify-between hover:scale-105 transition duration-300">
+                    <div class="p-6 space-y-4">
+                        <span class="bg-gray-100 text-gray-700 font-bold text-xs px-2 py-1 rounded">Light User</span>
+                        <h3 class="text-xl font-bold text-gray-900">Paket EzNet</h3>
+                        <p class="text-gray-500 text-sm">Cocok untuk kebutuhan basic / belajar di rumah.</p>
+                        <div class="border-t border-b py-3 my-2">
+                            <span class="text-gray-400 text-xs line-through">Rp 200.000</span>
+                            <div class="flex items-baseline">
+                                <span class="text-2xl font-bold text-red-600">Rp 170.000</span>
+                                <span class="text-gray-500 text-xs ml-1">/ bulan</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Kecepatan Stabil (Up to 20-30 Mbps)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Ideal untuk 1 - 3 Perangkat</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> 100% Kuota Unlimited</li>
+                        </ul>
+                    </div>
+                    <div class="p-6">
+                        <a href="https://wa.me/628551929659?text=Saya%20ingin%20pasang%20Paket%20EzNet%20170rb" target="_blank" class="block w-full text-center bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 rounded-xl transition">Pilih Paket</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-md border-2 border-red-500 overflow-hidden flex flex-col justify-between transform scale-105 relative hover:shadow-xl transition duration-300">
+                    <div class="absolute top-0 right-0 bg-red-500 text-white text-[10px] font-black px-3 py-1 uppercase rounded-bl-lg tracking-wider">Terlaris</div>
+                    <div class="p-6 space-y-4">
+                        <span class="bg-red-100 text-red-600 font-bold text-xs px-2 py-1 rounded">Best Value</span>
+                        <h3 class="text-xl font-bold text-gray-900">Internet Only 50 Mbps</h3>
+                        <p class="text-gray-500 text-sm">Pilihan paling pas untuk keluarga standard digital modern.</p>
+                        <div class="border-t border-b py-3 my-2">
+                            <div class="flex items-baseline">
+                                <span class="text-3xl font-bold text-red-600">Rp 230.000</span>
+                                <span class="text-gray-500 text-xs ml-1">/ bulan</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Kecepatan Tinggi 50 Mbps</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Ideal untuk 3 - 5 Perangkat</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Lancar Streaming & Game Online</li>
+                        </ul>
+                    </div>
+                    <div class="p-6">
+                        <a href="https://wa.me/628551929659?text=Saya%20ingin%20pasang%20Paket%2050%20Mbps%20230rb" target="_blank" class="block w-full text-center bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 rounded-xl transition shadow-md">Pilih Paket</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden flex flex-col justify-between hover:scale-105 transition duration-300">
+                    <div class="p-6 space-y-4">
+                        <span class="bg-amber-100 text-amber-700 font-bold text-xs px-2 py-1 rounded">Speed Booster Promo</span>
+                        <h3 class="text-xl font-bold text-gray-900">Dynamic 75 Mbps</h3>
+                        <p class="text-gray-500 text-sm">Kecepatan extra melimpah untuk urusan kerja / WFH.</p>
+                        <div class="border-t border-b py-3 my-2">
+                            <div class="flex items-baseline">
+                                <span class="text-2xl font-bold text-red-600">Rp 250.000</span>
+                                <span class="text-gray-500 text-xs ml-1">/ bulan</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Kecepatan Tinggi 75 Mbps</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Free Upgrade 100 Mbps (90 Hari)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Ideal untuk 5 - 7 Perangkat</li>
+                        </ul>
+                    </div>
+                    <div class="p-6">
+                        <a href="https://wa.me/628551929659?text=Saya%20ingin%20pasang%20Paket%2075%20Mbps%20250rb" target="_blank" class="block w-full text-center bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 rounded-xl transition">Pilih Paket</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden flex flex-col justify-between hover:scale-105 transition duration-300">
+                    <div class="p-6 space-y-4">
+                        <span class="bg-purple-100 text-purple-700 font-bold text-xs px-2 py-1 rounded">Heavy User</span>
+                        <h3 class="text-xl font-bold text-gray-900">Ultra Fast 150 Mbps</h3>
+                        <p class="text-gray-500 text-sm">Super cepat tanpa hambatan untuk kantor, cafe, kosan.</p>
+                        <div class="border-t border-b py-3 my-2">
+                            <div class="flex items-baseline">
+                                <span class="text-2xl font-bold text-red-600">Rp 325.000</span>
+                                <span class="text-gray-500 text-xs ml-1">/ bulan</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Kecepatan Ekstrim 150 Mbps</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Ideal untuk 7 - 10 Perangkat</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Free Kuota Keluarga / OTT Apps</li>
+                        </ul>
+                    </div>
+                    <div class="p-6">
+                        <a href="https://wa.me/628551929659?text=Saya%20ingin%20pasang%20Paket%20150%20Mbps%20325rb" target="_blank" class="block w-full text-center bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 rounded-xl transition">Pilih Paket</a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-xs text-gray-500 mt-8">*Harga belum termasuk PPN 11% & ketentuan wilayah kluster tertentu dari Telkomsel.</p>
+        </div>
     </section>
 
-    <section id="cara">
-      <div class="section-head">
-        <div>
-          <h2>Cara Pasang</h2>
-          <p>Langkah pendaftaran mengikuti alur umum pasang IndiHome: pilih paket, isi data, lalu tunggu verifikasi dan instalasi.</p>
+    <section id="alur" class="py-16 container mx-auto px-4">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-3">4 Langkah Mudah Pasang WiFi</h2>
+            <p class="text-gray-600">Tidak perlu repot mengantre ke GraPARI, semua proses kami tangani secara online.</p>
         </div>
-      </div>
-
-      <div class="grid steps">
-        <article class="card">
-          <div class="step-num">1</div>
-          <div class="plan-name">Pilih Paket</div>
-          <p style="color:var(--muted);line-height:1.7">Tentukan paket internet sesuai jumlah pengguna dan kebutuhan harian.</p>
-        </article>
-        <article class="card">
-          <div class="step-num">2</div>
-          <div class="plan-name">Isi Data</div>
-          <p style="color:var(--muted);line-height:1.7">Masukkan nama, nomor HP, alamat lengkap, dan titik pemasangan.</p>
-        </article>
-        <article class="card">
-          <div class="step-num">3</div>
-          <div class="plan-name">Konfirmasi</div>
-          <p style="color:var(--muted);line-height:1.7">Admin akan menghubungi untuk pengecekan area dan jadwal pemasangan.</p>
-        </article>
-        <article class="card">
-          <div class="step-num">4</div>
-          <div class="plan-name">Instalasi</div>
-          <p style="color:var(--muted);line-height:1.7">Teknisi datang ke lokasi untuk pemasangan perangkat dan aktivasi layanan.</p>
-        </article>
-      </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 relative">
+            <div class="text-center space-y-2">
+                <div class="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto shadow-md">1</div>
+                <h4 class="font-bold text-lg text-gray-900">Pilih Paket</h4>
+                <p class="text-sm text-gray-600">Tentukan paket kecepatan internet yang sesuai dengan kebutuhan rumah Anda.</p>
+            </div>
+            <div class="text-center space-y-2">
+                <div class="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto shadow-md">2</div>
+                <h4 class="font-bold text-lg text-gray-900">Kirim Data & Lokasi</h4>
+                <p class="text-sm text-gray-600">Hubungi kami via WhatsApp, lalu kirimkan share-lokasi untuk cek ketersediaan jaringan.</p>
+            </div>
+            <div class="text-center space-y-2">
+                <div class="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto shadow-md">3</div>
+                <h4 class="font-bold text-lg text-gray-900">Registrasi Berkas</h4>
+                <p class="text-sm text-gray-600">Proses pendaftaran data diri digital akan dibantu oleh Tim Sales Resmi kami.</p>
+            </div>
+            <div class="text-center space-y-2">
+                <div class="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto shadow-md">4</div>
+                <h4 class="font-bold text-lg text-gray-900">Instalasi / Pasang</h4>
+                <p class="text-sm text-gray-600">Teknisi datang ke lokasi Anda melakukan penarikan kabel fiber optik, dan WiFi langsung aktif!</p>
+            </div>
+        </div>
     </section>
 
-    <section id="kontak">
-      <div class="cta">
-        <div>
-          <h3>Siap dipakai sebagai website promo pemasangan IndiHome</h3>
-          <p>Tambahkan nomor WhatsApp, formulir lead, atau tombol panggil agar pengunjung langsung bisa daftar.</p>
+    <section class="bg-red-600 text-white py-12">
+        <div class="container mx-auto px-4 text-center space-y-4">
+            <h3 class="text-2xl md:text-3xl font-bold">Rumah Anda Belum Terpasang Internet Tercepat?</h3>
+            <p class="text-white/80 max-w-xl mx-auto text-sm md:text-base">Konsultasikan kebutuhan Anda sekarang secara gratis dengan tim marketing kami.</p>
+            <a href="https://wa.me/628551929659?text=Halo%20Sales,%20saya%20ingin%20konsultasi%20pemasangan%20IndiHome" target="_blank" class="inline-flex items-center space-x-2 bg-green-500 hover:bg-green-600 text-white font-black text-lg px-8 py-3.5 rounded-2xl shadow-xl transition transform hover:scale-105">
+                <i class="fab fa-whatsapp text-2xl"></i>
+                <span>Hubungi Sales via WhatsApp</span>
+            </a>
         </div>
-        <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <a class="btn btn-primary" href="https://wa.me/628551929659" target="_blank" rel="noreferrer">Chat WhatsApp</a>
-          <a class="btn btn-ghost" href="astridwulan01@gmail.com">Email Admin</a>
-        </div>
-      </div>
     </section>
 
-    <footer class="footer">
-      <p>
-        Website ini dibuat sebagai template jasa pemasangan WiFi IndiHome 2026. Harga paket dan promo dapat berubah sesuai area, periode promo, dan kebijakan resmi Telkomsel. Informasi paket dan biaya pemasangan yang dijadikan acuan berasal dari katalog IndiHome serta halaman syarat pemasangan Telkomsel. [web:1][web:6]
-      </p>
+    <footer class="bg-gray-900 text-gray-400 py-8 border-t border-gray-800">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm space-y-4 md:space-y-0">
+            <div class="text-center md:text-left">
+                <p class="font-bold text-white">IndiHome Sales Agent Mitra Resmi</p>
+                <p class="text-xs text-gray-500 mt-1">© 2026 Seluruh hak cipta dilindungi. Seluruh logo milik PT Telkomsel Indonesia.</p>
+            </div>
+            <div class="flex space-x-4 text-xs">
+                <span class="text-gray-500">Website ini merupakan media promosi independen sales mitra IndiHome.</span>
+            </div>
+        </div>
     </footer>
-  </main>
+
 </body>
 </html>
